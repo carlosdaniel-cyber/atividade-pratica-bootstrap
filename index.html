@@ -7,200 +7,272 @@
     <link rel="stylesheet" href="style.css">
     <title>Sound Factory</title>
 </head>
-<body class="container-md">
-    
-    <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-xl bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sound Factory</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<body>
+    <div class="container-md">
+      <!-- Barra de navegação -->
+      <nav class="navbar navbar-expand-xl bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Sound Factory</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nosso-time">Nosso time</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#quem-somos">Quem somos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Carrossel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/violin.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="fs-3">Harmonize sua vida com os melhores instrumentos musicais.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/piano.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="fs-3">Toque a alma das teclas, sintetize a melodia perfeita.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/beat.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="fs-3">Bata o ritmo, sinta a batida, libere a energia da percussão.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/horn.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <p class="fs-3">A elegância do French Horn: um toque clássico e sofisticado para sua música.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#produtos">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosso-time">Nosso time</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#quem-somos">Quem somos</a>
-              </li>
-            </ul>
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </nav>
 
-      <!-- Carrossel -->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <!-- Produtos -->
+        <div id="produtos" class="container mt-4">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" alt="Guitarra Elétrica Gibson Les Paul Standard" src="assets/gibson-guitar.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Guitarra Elétrica Gibson Les Paul Standard</h5>
+                    <p class="card-text">A lendária guitarra Gibson Les Paul Standard, conhecida por sua construção sólida e som potente. Ideal para músicos que buscam um instrumento versátil e de alta qualidade.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary">$2.500,00</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" alt="Bateria Acústica Mapex Saturn V" src="assets/drums.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Bateria Acústica Mapex Saturn V</h5>
+                    <p class="card-text"> A bateria Mapex Saturn V é uma escolha popular entre bateristas profissionais. Com casco em bordo norte-americano e design inovador, oferece um som encorpado e equilibrado.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary"> $2.800,00</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" alt="Teclado Digital Yamaha P-125" src="assets/keyboard.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Teclado Digital Yamaha P-125</h5>
+                    <p class="card-text">O teclado Yamaha P-125 é um modelo portátil e versátil, perfeito para apresentações ao vivo ou estudos em casa. Possui teclas com resposta ao toque e uma variedade de timbres autênticos.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary">$800,00</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" alt="Trompete Yamaha YTR-2330" src="assets/trompete.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Trompete Yamaha YTR-2330</h5>
+                    <p class="card-text">O trompete Yamaha YTR-2330 é uma excelente opção para estudantes e músicos intermediários. Possui pistões de ação suave e um som brilhante.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary">$600,00</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" alt="Baixo Elétrico Fender Precision" src="assets/bass.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Baixo Elétrico Fender Precision</h5>
+                    <p class="card-text">O baixo elétrico Fender Precision é um dos modelos mais populares do mundo, conhecido por seu timbre sólido e punch. É uma escolha ideal para baixistas de diversos estilos musicais.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary">$1.200,00</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" alt="Saxofone Alto Selmer AS500" src="assets/saxofone.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Saxofone Alto Selmer AS500</h5>
+                    <p class="card-text">O saxofone alto Selmer AS500 é recomendado para estudantes avançados e músicos iniciantes. Oferece uma resposta rápida e uma sonoridade suave e equilibrada.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="#" class="btn btn-primary">$1.000,00</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/violin.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="fs-3">Harmonize sua vida com os melhores instrumentos musicais.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/piano.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="fs-3">Toque a alma das teclas, sintetize a melodia perfeita.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/beat.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="fs-3">Bata o ritmo, sinta a batida, libere a energia da percussão.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/horn.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <p class="fs-3">A elegância do French Horn: um toque clássico e sofisticado para sua música.</p>
-            </div>
-          </div>
+
+        <!-- Nosso time -->
+        <div id="nosso-time" class="row m-5">
+          <h2 class="text-center p-2">NOSSO TIME</h2>
+          <div class="col-lg-4 text-center">
+            <img class="rounded-circle" src="assets/woman1.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Mariana Silva</h2>
+            <p>Gerente de Vendas</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center">
+            <img class="rounded-circle" src="assets/man.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Rafael Pereira</h2>
+            <p>Especialista em Reparos e Manutenção</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes »</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4 text-center">
+            <img class="rounded-circle" src="assets/woman2.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Carolina Santos</h2>
+            <p>Curadora de Produtos Musicais</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes »</a></p>
+          </div><!-- /.col-lg-4 -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
 
-      <!-- Produtos -->
-      <div id="produtos" class="container mt-4">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Guitarra Elétrica Gibson Les Paul Standard" src="assets/gibson-guitar.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <h5 class="card-title">Guitarra Elétrica Gibson Les Paul Standard</h5>
-                  <p class="card-text">A lendária guitarra Gibson Les Paul Standard, conhecida por sua construção sólida e som potente. Ideal para músicos que buscam um instrumento versátil e de alta qualidade.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="btn btn-primary">$2.500,00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Bateria Acústica Mapex Saturn V" src="assets/drums.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <h5 class="card-title">Bateria Acústica Mapex Saturn V</h5>
-                  <p class="card-text"> A bateria Mapex Saturn V é uma escolha popular entre bateristas profissionais. Com casco em bordo norte-americano e design inovador, oferece um som encorpado e equilibrado.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="btn btn-primary"> $2.800,00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Teclado Digital Yamaha P-125" src="assets/keyboard.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <h5 class="card-title">Teclado Digital Yamaha P-125</h5>
-                  <p class="card-text">O teclado Yamaha P-125 é um modelo portátil e versátil, perfeito para apresentações ao vivo ou estudos em casa. Possui teclas com resposta ao toque e uma variedade de timbres autênticos.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="btn btn-primary">$800,00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Trompete Yamaha YTR-2330" src="assets/trompete.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <h5 class="card-title">Trompete Yamaha YTR-2330</h5>
-                  <p class="card-text">O trompete Yamaha YTR-2330 é uma excelente opção para estudantes e músicos intermediários. Possui pistões de ação suave e um som brilhante.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="btn btn-primary">$600,00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Baixo Elétrico Fender Precision" src="assets/bass.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <h5 class="card-title">Baixo Elétrico Fender Precision</h5>
-                  <p class="card-text">O baixo elétrico Fender Precision é um dos modelos mais populares do mundo, conhecido por seu timbre sólido e punch. É uma escolha ideal para baixistas de diversos estilos musicais.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="btn btn-primary">$1.200,00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" alt="Saxofone Alto Selmer AS500" src="assets/saxofone.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                <div class="card-body">
-                  <h5 class="card-title">Saxofone Alto Selmer AS500</h5>
-                  <p class="card-text">O saxofone alto Selmer AS500 é recomendado para estudantes avançados e músicos iniciantes. Oferece uma resposta rápida e uma sonoridade suave e equilibrada.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="btn btn-primary">$1.000,00</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Quem somos -->
+        <div id="quem-somos" class="card flex-md-row mb-4 box-shadow h-md-250">
+          <div class="card-body d-flex flex-column align-items-start">
+            <h3 class="mb-0">
+              <p class="text-dark">Quem somos</p>
+            </h3>
+            <p class="card-text mb-auto">Somos uma loja apaixonada por música e arte. Nossa missão é fornecer aos músicos, profissionais e amadores, os melhores instrumentos musicais e acessórios para aprimorar sua paixão. Desde nossa fundação, estamos comprometidos em oferecer um atendimento personalizado e uma seleção exclusiva de produtos, tornando-nos a escolha ideal para músicos de todos os estilos e níveis.</p>
           </div>
-      </div>
-
-      <!-- Nosso time -->
-      <div id="nosso-time" class="row m-5">
-        <h2 class="text-center p-2">NOSSO TIME</h2>
-        <div class="col-lg-4 text-center">
-          <img class="rounded-circle" src="assets/woman1.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Mariana Silva</h2>
-          <p>Gerente de Vendas</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 text-center">
-          <img class="rounded-circle" src="assets/man.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Rafael Pereira</h2>
-          <p>Especialista em Reparos e Manutenção</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 text-center">
-          <img class="rounded-circle" src="assets/woman2.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Carolina Santos</h2>
-          <p>Curadora de Produtos Musicais</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes »</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div>
-
-      <!-- Quem somos -->
-      <div id="quem-somos" class="card flex-md-row mb-4 box-shadow h-md-250">
-        <div class="card-body d-flex flex-column align-items-start">
-          <h3 class="mb-0">
-            <p class="text-dark">Quem somos</p>
-          </h3>
-          <p class="card-text mb-auto">Somos uma loja apaixonada por música e arte. Nossa missão é fornecer aos músicos, profissionais e amadores, os melhores instrumentos musicais e acessórios para aprimorar sua paixão. Desde nossa fundação, estamos comprometidos em oferecer um atendimento personalizado e uma seleção exclusiva de produtos, tornando-nos a escolha ideal para músicos de todos os estilos e níveis.</p>
+          <img class="card-img-right flex-auto d-none d-md-block" alt="loja" style="width: 500px; height: 250px;" src="assets/store.jpg">
         </div>
-        <img class="card-img-right flex-auto d-none d-md-block" alt="loja" style="width: 500px; height: 250px;" src="assets/store.jpg">
       </div>
 
       <!-- Rodapé -->
-      <div id="rodape">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ducimus quidem expedita. Officiis necessitatibus quam ut iure qui. Vero autem incidunt fugiat, quidem dolorem hic quae animi tempore reprehenderit rem!</p>
-      </div>
+      <footer
+              class="text-center text-lg-start text-dark pt-2"
+              style="background-color: #ECEFF1"
+              >
 
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold">sound factory</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p>
+                  Somos a "SoundFactory", uma loja de instrumentos musicais dedicada a inspirar e nutrir a paixão pela música. Fundada por músicos apaixonados, nossa empresa nasceu do desejo de proporcionar uma experiência musical excepcional a todos os clientes, sejam eles músicos profissionais, amadores ou entusiastas.
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">LINKS ÚTEIS</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p>
+                  <a href="#!" class="text-dark">Facebook</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">Instagram</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">Twitter</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">Contato</h6>
+                <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px"
+                    />
+                <p><i class="fas fa-home mr-3"></i>Rua da Música, 123 - Cidade, Estado, CEP</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                <p><i class="fas fa-phone mr-3"></i>Telefone: (11) 98765-4321</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+          © 2023 Copyright:
+          <a class="text-dark" href="SoundFactory.com/"
+            >SoundFactory.com</a
+            >
+        </div>
+        <!-- Copyright -->
+      </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
